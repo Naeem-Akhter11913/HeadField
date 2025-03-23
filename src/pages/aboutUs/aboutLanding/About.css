@@ -1,0 +1,71 @@
+/* Main container */
+.about-container {
+    background-color: #111;
+    color: #fff;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+    text-align: left;
+}
+
+/* Section styling */
+.section {
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Paragraph styling */
+.section p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #bbb;
+}
+
+/* Button container */
+.button-container {
+    text-align: start;
+    margin-top: 20px;
+}
+
+/* Button styling */
+.home-button {
+    background-color: transparent;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 1px solid #e68900;
+    color: #ffffff;
+    transition: all 0.3s ease-in-out;
+}
+
+.home-button:hover {
+    background-color: #e68900;
+    transform: translateY(-5px);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .section {
+        padding: 10px;
+    }
+
+    .section h2 {
+        font-size: 20px;
+    }
+
+    .section p {
+        font-size: 14px;
+    }
+
+    .home-button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}

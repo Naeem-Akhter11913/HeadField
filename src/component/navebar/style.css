@@ -1,0 +1,121 @@
+.navbar {
+    /* background: linear-gradient(to right, black, #8A7ACD); */
+    background: linear-gradient(to right, black 70%, #8A7ACD 100%);
+
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 10px 50px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* max-width: 1200px; */
+    margin: auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+}
+.nav-links li:hover{
+    transform: translateY(-3px);
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffb347;
+}
+
+.contact-btn {
+    background: transparent;
+    border: 2px solid #ffb347;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-btn:hover {
+    background: #ffb347;
+    color: black;
+    transform: translateY(-5px);
+}
+
+/* Hamburger Menu for Mobile */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+
+.dropdown{
+    width: 83px;
+    background: transparent;
+    color: #ffffff;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    .nav-right {
+        gap: 10px;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: black;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 0;
+        display: none;
+        /* Hidden by default */
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}

@@ -1,0 +1,65 @@
+.why-choose-us {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px 20px;
+    background-color: black;
+    color: white;
+  }
+  
+  .image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .choose-us-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .content {
+    flex: 1;
+    max-width: 500px;
+  }
+  
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .description {
+    font-size: 1rem;
+    color: #bdbdbd;
+    margin-bottom: 20px;
+  }
+  
+  .connect-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffb400;
+    background: transparent;
+    border: 2px solid #ffb400;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .connect-button:hover {
+    background: #ffb400;
+    color: black;
+    transform: translateY(-5px);
+  cursor: pointer;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .why-choose-us {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  

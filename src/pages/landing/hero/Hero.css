@@ -1,0 +1,132 @@
+
+.hero-container {
+    position: relative;
+    background-color: #110F0F;
+    background-image: url('/assets/squire.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero-container img {
+    max-width: 100%;
+}
+
+.hero-right{
+    display: flex;
+    justify-content: flex-end;
+}
+.hero-left{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.hero-text{
+    position: absolute;
+    opacity: 0; /* for GSAP animation [ initailly set it 0 then gsap set opacity value as 1 later] */
+    width: 100%;
+    height: 100%;
+    line-height: 96px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 70px;
+    font-weight: 700;
+}
+
+.hero-text p{
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 16px;
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+    letter-spacing: 2%;
+}
+.hero-btn-container{
+    display: flex;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.hero-btn-container input{
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 18px;
+    background: transparent;
+    color: white;
+}
+.hero-btn-container button{
+    background: gold;
+    font-size: 17px;
+    padding: 10px;
+    border: none;
+    border-radius: 18px;
+}
+
+.gradient-text {
+    font-weight: bold;
+    background: linear-gradient(to right, rgb(17, 15, 15), rgb(224, 154, 74), rgb(188, 196, 163), rgb(17, 15, 15));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.attract-button{
+    transition: all 0.3s ease-in-out;
+}
+.attract-button:hover{
+    transform: translateY(-5px);
+    cursor: pointer;
+    color: #ffffff;
+}
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .hero-text {
+        font-size: 50px;
+        line-height: 70px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-container {
+        justify-content: center;
+        height: auto;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .hero-text {
+        font-size: 40px;
+        line-height: 60px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-text {
+        font-size: 30px;
+        line-height: 45px;
+    }
+
+    .hero-text p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .hero-btn-container{
+        flex-direction: column;
+        width: 75%;
+    }
+
+}

@@ -1,0 +1,98 @@
+/* General Styles */
+.container {
+    /* margin: 0 auto; */
+    padding: 20px;
+    color: white;
+    background-color: #111;
+    padding: 30px 50px;
+}
+.process{
+    max-width: 70%;
+}
+
+/* Process Section */
+.process h2 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: 0px;
+}
+
+.process p {
+    font-size: 16px;
+    line-height: 24px;
+    min-width: 242px;
+    font-weight: 400;
+    color: #FFFFFF99;
+}
+
+/* Branding Works Section */
+.branding-works {
+    margin-top: 40px;
+}
+
+.branding-works h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.card-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    background: #222;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 32%;
+    border: 1px solid #444;
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.image-placeholder {
+    background: #8e7cc3;
+    height: 150px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: start;
+}
+
+.card a {
+    /* display: inline-block; */
+    margin-top: 10px;
+    color: #bbb;
+    text-decoration: none;
+    text-align: left;
+}
+
+.card a:hover {
+    color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+    .card {
+        width: 48%;
+    }
+}
+
+@media (max-width: 600px) {
+    .card {
+        width: 100%;
+    }
+}

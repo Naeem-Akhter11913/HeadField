@@ -1,0 +1,128 @@
+
+
+.our-service {
+    background: #0F0F0F;
+    padding: 20px 50px;
+}
+
+.services-flex {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.our-service-title {
+    color: #ffffff;
+    font-weight: 700;
+    padding: 20px;
+    font-size: 30px;
+    line-height: 56px;
+    text-align: center;
+}
+
+.service-cart {
+    width: 100%;
+    /* max-width: 480px; */
+    width: 33.33%;
+    border: 1px solid rgb(146, 145, 145);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+.service-cart:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.our-service h3 {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 36px;
+    color: white;
+}
+
+.service-cart p {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #FFFFFF99;
+}
+
+.service-cart img {
+    width: 40px;
+}
+
+/* Button Styling */
+.our-service-btn {
+    padding: 10px 20px;
+    font-size: 20px;
+    background: transparent;
+    color: #FFA800;
+    border: 1px solid #FFA800;
+    border-radius: 20px;
+    text-transform: uppercase;
+    margin: 40px -20px;
+    display: block;
+    transition: all 0.3s ease-in-out;
+}
+
+.our-service-btn:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+    background: #FFA800;
+    color: #ffffff;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .services-flex {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .service-cart {
+        width: 45%;
+    }
+
+    .our-service-title {
+        font-size: 28px;
+        line-height: 48px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .services-flex {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .service-cart {
+        width: 45%;
+    }
+
+    .our-service-title {
+        font-size: 26px;
+        line-height: 40px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .service-cart {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .our-service-title {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .our-service-btn {
+        font-size: 18px;
+        padding: 8px 16px;
+    }
+}

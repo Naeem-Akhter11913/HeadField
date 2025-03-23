@@ -1,0 +1,139 @@
+
+.about-hero-container {
+    position: relative;
+    background-color: #110F0F;
+    background-image: url('/assets/squire.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    /* height: 90vh; */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    font-family: "Poppins", "Inter", sans-serif;
+    /* padding: 20px; */
+}
+
+/* Centered content */
+.about-hero-center {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: white;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: flex-end; */
+    padding: 50px;
+    /* text-align: left; */
+}
+
+/* Left-aligned section */
+.about-hero-sub-center {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* max-width: 700px; */
+    align-items: flex-start;
+    justify-content: center;
+    gap: 15px;
+    height: 100%;
+}
+
+/* Responsive text */
+.about-hero-sub-center p {
+    font-size: clamp(14px, 1.5vw, 18px);
+    line-height: clamp(22px, 2vw, 28px);
+    font-weight: 400;
+    color: #c4c4c4;
+    text-align: start;
+}
+.about-hero-sub-center h2 {
+    font-size: clamp(18px, 1.5vw, 26px);
+    line-height: clamp(29px, 2vw, 28px);
+    font-weight: 400;
+    color: #FFA800;
+    text-align: start;
+}
+
+.about-hero-sub-center h3 {
+    font-size: clamp(32px, 5vw, 64px);
+    line-height: clamp(40px, 6vw, 80px);
+    font-weight: 800;
+    color: white;
+    text-align: start;
+    width: 100%;
+}
+
+/* Button styling */
+.about-hero-sub-center button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: clamp(14px, 1.5vw, 16px);
+    font-weight: 600;
+    color: black;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    background: #FFA800;
+}
+
+/* Button hover effect */
+.about-hero-sub-center button:hover {
+    transform: translateY(-5px);
+    color: #ffffff;
+}
+
+/* 🔹 Responsive Adjustments */
+@media screen and (max-width: 1024px) {
+    .about-hero-container {
+        height: 70vh;
+    }
+    .about-hero-center {
+        padding: 30px;
+    }
+    .about-hero-sub-center {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-hero-container {
+        height: auto;
+        padding: 20px;
+    }
+    .about-hero-center {
+        padding: 20px;
+        text-align: center;
+    }
+    .about-hero-sub-center {
+        align-items: center;
+    }
+    .about-hero-sub-center p,
+    .about-hero-sub-center h3 {
+        text-align: center;
+    }
+    .about-hero-sub-center button {
+        max-width: 250px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about-hero-container {
+        padding: 10px;
+        width: 100%;
+    }
+    .about-hero-center {
+        padding: 15px;
+        width: 100%;
+    }
+    .about-hero-sub-center {
+        gap: 10px;
+    }
+    .about-hero-sub-center button {
+        width: 100%;
+    }
+}

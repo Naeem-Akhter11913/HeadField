@@ -1,0 +1,118 @@
+.subscribe-container {
+  background-color: #111;
+  padding: 40px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.subscribe-box {
+  background-color: #f9a825;
+  padding: 40px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+/* Title */
+.subscribe-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+}
+
+/* Text */
+.subscribe-text {
+  font-size: 16px;
+  color: #333;
+  margin-top: 10px;
+}
+
+/* Form */
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+/* Input field */
+.subscribe-input {
+  /* padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 20px;
+  max-width: 300px; */
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 300px;
+  /* Ensures a good size on larger screens */
+}
+
+/* Button */
+.subscribe-button {
+  background-color: #000;
+  color: white;
+  padding: 10px 20px;
+  font-size: 14px;
+  border: none;
+  border-radius: 20px;
+  margin-left: 10px;
+  transition: all 0.3s ease-in-out;
+
+}
+
+/* Go to top button */
+.go-top-button {
+  background: none;
+  border: 1px solid #f9a825;
+  color: #f9a825;
+  padding: 10px 15px;
+  margin-top: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.go-top-button:hover {
+  transform: translateY(-5px);
+  background-color: #f9a825;
+  color: #ffffff;
+}
+
+.subscribe-button:hover {
+  transform: translateY(-5px);
+  color: #ffffff;
+  cursor: pointer;
+
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .subscribe-form {
+    flex-direction: column;
+  }
+
+  .subscribe-input {
+    width: 100%;
+    margin-bottom: 15px;
+    max-width: 600px;
+  }
+
+  .subscribe-button {
+    width: 100%;
+    margin-left: 10px;
+    margin-left: 0;
+  }
+
+
+
+  .subscribe-container {
+    text-align: start;
+  }
+}
+

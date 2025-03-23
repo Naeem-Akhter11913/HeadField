@@ -1,0 +1,65 @@
+.we-offer {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #121212;
+    color: white;
+  }
+  
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .description {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    font-size: 1rem;
+    color: #bdbdbd;
+  }
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .service-card {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #333;
+    text-align: left;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .service-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .service-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .service-description {
+    font-size: 0.9rem;
+    color: #bdbdbd;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .services-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
