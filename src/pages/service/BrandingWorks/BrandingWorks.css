@@ -24,6 +24,7 @@
     min-width: 242px;
     font-weight: 400;
     color: #FFFFFF99;
+   
 }
 
 /* Branding Works Section */
@@ -52,6 +53,7 @@
     width: 32%;
     border: 1px solid #444;
     transition: all 0.3s ease-in-out;
+    text-align: start;
 }
 
 .card:hover{
@@ -69,13 +71,13 @@
 .card h3 {
     font-size: 18px;
     font-weight: bold;
-    text-align: start;
+    margin-bottom: 10px;
 }
 
 .card a {
     /* display: inline-block; */
     margin-top: 10px;
-    color: #bbb;
+    color: #728095;
     text-decoration: none;
     text-align: left;
 }

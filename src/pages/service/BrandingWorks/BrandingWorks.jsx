@@ -22,7 +22,12 @@ const BrandingWorks = () => {
             <div className="card" key={index}>
               <div className="image-placeholder"></div>
               <h3>Creative landing page</h3>
-              <a href="#">Read more →</a>
+              <a href="#" style={{textAlign:'start'}} >Read more <span style={{
+                border:"1px solid white",
+                height:"30px",
+                borderRadius:'50%',
+                padding:'1px'
+              }}>→</span></a>
             </div>
           ))}
         </div>
