@@ -22,7 +22,7 @@ const Navebar = () => {
     useEffect(() => {
         if (isFirstRender.current) {
             isFirstRender.current = false;
-            gsap.to(navLinksRef.current, { y: -32 });
+            gsap.to(navLinksRef.current, { y: -64 });
             return;
         }
 
@@ -33,7 +33,7 @@ const Navebar = () => {
                 { y: 0 },
                 {
                     y: 160,
-                    opacity: 2,
+                    opacity: 1,
                     display: 'flex',
                     duration: 0.5,
                     ease: 'power2.out',
@@ -61,12 +61,12 @@ const Navebar = () => {
                 onComplete: () => {
                     gsap.to(navLinksRef.current, {
                         y: -150,
-                        duration: 0.9,
+                        duration: 0.5,
                         ease: 'power2.out',
                         onComplete: () => {
                             gsap.to(navLinksRef.current, {
-                                y: -32,
-                                duration: 0.9,
+                                y: -64,
+                                duration: 0.1,
                                 ease: 'power2.out',
                             });
                         }
