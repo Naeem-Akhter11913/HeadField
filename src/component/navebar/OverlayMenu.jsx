@@ -17,13 +17,15 @@ const OverlayMenu = ({ reference, setMenuOpen, menuOpen }) => {
       navigate('/about')
     else
       navigate('/')
+
+    setMenuOpen(false);
   }
   return (
     <div className="overlay-container">
       <div className="overlay-sub-container" ref={reference}>
         <div className="overlay">
           <ul className="menu">
-            <select className="dropdown" onChange={handleChange} style={{fontSize:"16px"}}>
+            <select className="dropdown" onChange={handleChange} style={{ fontSize: "16px" }}>
               <option value="">Company</option>
               <option value="about">About</option>
             </select>
