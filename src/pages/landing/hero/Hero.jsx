@@ -36,7 +36,6 @@ const Hero = () => {
 
             <div className="hero-right">
                 <img src="/assets/hero-right.png" alt="Hero Right" />
-
             </div>
         </div>
     );

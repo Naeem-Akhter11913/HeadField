@@ -1,4 +1,4 @@
-.overlay-container{
+.overlay-container {
     position: fixed;
     top: 0;
     left: 0;
@@ -9,7 +9,8 @@
     z-index: 9999;
     background-color: rgba(0, 0, 0, 0.5);
 }
-.overlay-sub-container{
+
+.overlay-sub-container {
     position: absolute;
     padding: 10px;
     display: flex;
@@ -49,7 +50,7 @@
     margin: 15px 0;
 }
 
-.menu li a{
+.menu li a {
     text-decoration: none;
     color: #ffffff;
 }
@@ -59,7 +60,7 @@
     cursor: pointer;
 }
 
-.close-btn{
+.close-btn {
     width: 100px;
     border: none;
     padding: 10px;
@@ -69,7 +70,15 @@
 }
 
 @media (min-width: 768px) {
-    .overlay-container{
+    .overlay-container {
         display: none;
     }
+}
+
+
+@media (max-width: 480px) {
+    .overlay-sub-container {
+        transform: translate(0px, -67px);
+    }
+
 }

@@ -102,7 +102,6 @@ const Navebar = () => {
 
 
                 </div>
-
             </nav>
             <OverlayMenu reference={navLinksRef} setMenuOpen={setMenuOpen} menuOpen={menuOpen} />
         </>
