@@ -97,3 +97,14 @@
     font-size: 19px;
   }
 }
+
+@media (max-width: 575px) {
+  .testimonials-grid{
+    padding: 20px 12px !important
+  }
+
+  .testimonials-sub-container{
+    flex-direction: column;
+  }
+
+}

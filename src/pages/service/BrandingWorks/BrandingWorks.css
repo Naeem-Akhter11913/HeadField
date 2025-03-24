@@ -98,3 +98,9 @@
         width: 100%;
     }
 }
+
+@media (max-width: 575px) {
+    .container{
+        padding: 25px 12px;
+    }
+}

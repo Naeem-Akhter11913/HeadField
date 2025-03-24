@@ -111,4 +111,10 @@
         width: 18%;
         min-width: 60px;
     }
+
+}
+@media (max-width: 575px) {
+    .trusted-container{
+        padding: 20px 12px;
+    }
 }

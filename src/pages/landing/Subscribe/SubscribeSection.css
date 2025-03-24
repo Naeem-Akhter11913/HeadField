@@ -116,3 +116,12 @@
   }
 }
 
+@media (max-width: 575px) {
+  .subscribe-container{
+    padding: 40px 12px;
+  }
+
+  .subscribe-box{
+    padding: 20px;
+  }
+}

@@ -62,4 +62,10 @@
       text-align: center;
     }
   }
+
+  @media (max-width: 575px) {
+    .why-choose-us{
+      padding: 50px 12px;
+    }
+  }
   

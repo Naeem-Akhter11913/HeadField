@@ -35,7 +35,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className="footer-section">
+        <div className="footer-section lasfooter" >
           <h3>Follow us</h3>
           <ul>
             <li><a href="#">Instagram</a></li>

@@ -126,3 +126,17 @@
         padding: 8px 16px;
     }
 }
+
+@media (max-width: 575px) {
+    .our-service{
+        padding: 20px 12px;
+    }
+
+    .our-service-btn{
+        margin: 40px 0px;
+    }
+    .our-service-title{
+        text-align: start;
+        padding: 20px 0px;
+    }
+}

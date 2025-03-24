@@ -111,6 +111,7 @@
   .work-showcase {
     flex-direction: column;
     text-align: center;
+    padding: 13px;
   }
 
   .work-container {

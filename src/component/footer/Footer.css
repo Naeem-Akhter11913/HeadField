@@ -33,7 +33,13 @@
 
 /* Extra small devices (phones, 0px - 575px) */
 @media (max-width: 575px) {
-  
+  .footer-container{
+    padding: 50px 12px;
+  }
+
+  .lasfooter{
+    width: 40%;
+  }
 }
 
 
